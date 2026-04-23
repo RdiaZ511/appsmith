@@ -1,0 +1,142 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 27,
+  "boxShadow": "none",
+  "buttonVariant": "PRIMARY",
+  "childStylesheet": {
+    "button": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "groupButtons.groupButton1.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton2.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButtond774sb3hix.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButtonbimg5gitxv.buttonColor"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "groupButtons.groupButton1.isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButton2.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton1.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtond774sb3hix.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonbimg5gitxv.onClick"
+    }
+  ],
+  "groupButtons": {
+    "groupButton1": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "disabledWhenInvalid": true,
+      "iconName": "saved",
+      "id": "groupButton1",
+      "index": 0,
+      "isDisabled": "",
+      "isVisible": true,
+      "label": "Grabar Datos",
+      "menuItems": {},
+      "onClick": "{{insert_infraestructura.run().then(() => {\n  resetWidget(\"Pestanas\", true);\n});}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton2": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "disabledWhenInvalid": false,
+      "iconName": "eraser",
+      "id": "groupButton2",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Limpiar  Formulario",
+      "menuItems": {},
+      "onClick": "{{resetWidget(\"Pestanas\", true);}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButtonbimg5gitxv": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "id": "groupButtonbimg5gitxv",
+      "index": 3,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Estadisticas",
+      "menuItems": {},
+      "onClick": "{{showModal(Modal1.name);}}",
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "b3h7xv5ox7"
+    },
+    "groupButtond774sb3hix": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "iconName": "map",
+      "id": "groupButtond774sb3hix",
+      "index": 2,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Ver en Mapa",
+      "menuItems": {},
+      "onClick": "{{mapFunctions.refreshMap();}}",
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "13mqbvhhc6"
+    }
+  },
+  "isCanvas": false,
+  "isDisabled": "",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "wx2k0drbxs",
+  "leftColumn": 0,
+  "minWidth": 450,
+  "mobileBottomRow": 57,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 14,
+  "mobileTopRow": 53,
+  "needsErrorInfo": false,
+  "orientation": "horizontal",
+  "originalBottomRow": 56,
+  "originalTopRow": 52,
+  "parentColumnSpace": 16.6875,
+  "parentId": "e2t8h48i45",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "topRow": 23,
+  "type": "BUTTON_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "nbp81f72zz",
+  "widgetName": "Estados"
+}

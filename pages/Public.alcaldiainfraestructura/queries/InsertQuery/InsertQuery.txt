@@ -1,0 +1,22 @@
+INSERT INTO public."alcaldiainfraestructura" (
+	"id",
+	"datoespecifico",
+	"alcaldia",
+	"fechaingreso",
+	"areadato",
+	"gestionpor",
+	"clasedato",
+	"tipovalordato",
+	"valordato",
+	"parroquia")
+VALUES (
+	'{{insert_form.formData.id}}',
+	'{{insert_form.formData.datoespecifico}}',
+	'{{insert_form.formData.alcaldia}}',
+	'{{insert_form.formData.fechaingreso}}',
+	'{{insert_form.formData.areadato}}',
+	'{{insert_form.formData.gestionpor}}',
+	'{{insert_form.formData.clasedato}}',
+	'{{insert_form.formData.tipovalordato}}',
+	'{{insert_form.formData.valordato}}',
+	'{{insert_form.formData.parroquia}}');

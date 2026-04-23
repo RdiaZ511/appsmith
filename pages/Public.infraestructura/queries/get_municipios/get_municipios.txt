@@ -1,0 +1,1 @@
+SELECT DISTINCT municipio, municipio as municipio_id FROM public."parroquias_carabobo" ORDER BY municipio

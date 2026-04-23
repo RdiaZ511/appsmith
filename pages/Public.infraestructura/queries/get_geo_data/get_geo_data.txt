@@ -1,0 +1,10 @@
+SELECT 
+    municipio, 
+    parroquia, 
+    geom, -- El campo donde guardas el JSON
+    CASE 
+        WHEN municipio = {{ alcaldia.selectedOptionValue }} THEN '#FF5733' -- Naranja para la parroquia seleccionada
+        WHEN parroquia = {{ parroquia.selectedOptionValue }} THEN '#33FF57' -- Verde para el resto del municipio
+        ELSE '#D1D1D1' -- Gris para el resto del estado
+    END as color_relleno
+FROM public.parroquias_carabobo;

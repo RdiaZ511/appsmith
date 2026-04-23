@@ -1,0 +1,8 @@
+SELECT areadato as "x", count(id) as "y" 
+FROM alcaldiaInfraestructura
+WHERE
+    ( {{!alcaldia.selectedOptionValue}} OR alcaldia = {{alcaldia.selectedOptionValue}} ) AND
+    ( {{!tipoDato.selectedOptionValue}} OR areaDato = {{tipoDato.selectedOptionValue}} ) AND
+    ( {{!gestionPor.selectedOptionValue}} OR gestionPor = {{gestionPor.selectedOptionValue}} ) AND
+    ( {{!claseDato.selectedOptionValue}} OR claseDato = {{claseDato.selectedOptionValue}} )
+GROUP BY areadato;

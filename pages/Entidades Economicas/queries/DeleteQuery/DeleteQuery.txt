@@ -1,0 +1,2 @@
+DELETE FROM public."entidad"
+  WHERE "codigo" = {{data_table.triggeredRow.codigo}};

@@ -1,0 +1,1 @@
+SELECT TRIM(public.parroquias_carabobo.municipio)||', '||TRIM(public.parroquias_carabobo.parroquia) as label, public.parroquias_carabobo.indice as value FROM public."parroquias_carabobo" order by indice;

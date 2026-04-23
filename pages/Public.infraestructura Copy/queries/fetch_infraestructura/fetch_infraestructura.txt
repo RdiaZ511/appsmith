@@ -1,0 +1,10 @@
+SELECT * FROM alcaldiaInfraestructura
+WHERE
+    ( {{!alcaldia.selectedOptionValue}} OR alcaldia = {{alcaldia.selectedOptionValue}} ) AND
+		( {{!parroquia.selectedOptionValue}} OR parroquia = {{parroquia.selectedOptionValue}} ) AND
+    ( {{!tipoDato.selectedOptionValue}} OR areaDato = {{tipoDato.selectedOptionValue}} ) AND
+    ( {{!gestionPor.selectedOptionValue}} OR gestionPor = {{gestionPor.selectedOptionValue}} ) AND
+    ( {{!claseDato.selectedOptionValue}} OR claseDato = {{claseDato.selectedOptionValue}} )
+ORDER BY id DESC
+LIMIT {{Table_infra.pageSize}}
+OFFSET {{Table_infra.pageOffset}};

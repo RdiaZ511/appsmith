@@ -1,0 +1,50 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 191,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "bjmtvl5d8j",
+  "leftColumn": 11,
+  "minWidth": 120,
+  "mobileBottomRow": 92,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 17,
+  "mobileTopRow": 88,
+  "needsErrorInfo": false,
+  "onClick": "{{navigateTo('https://www.google.com/maps/search/' + data_table.selectedRow.entidad + ' ' + data_table.selectedRow.direccion, {}, 'NEW_WINDOW');}}",
+  "parentColumnSpace": 17.9375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 27,
+  "text": "Ubicar en Google Maps",
+  "topRow": 187,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "zlerpsvqkg",
+  "widgetName": "Button2"
+}

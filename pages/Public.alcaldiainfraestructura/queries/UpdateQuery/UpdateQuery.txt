@@ -1,0 +1,11 @@
+UPDATE public."alcaldiainfraestructura" SET
+		"datoespecifico" = '{{update_form.fieldState.datoespecifico.isVisible ? update_form.formData.datoespecifico : update_form.sourceData.datoespecifico}}',
+		"alcaldia" = '{{update_form.fieldState.alcaldia.isVisible ? update_form.formData.alcaldia : update_form.sourceData.alcaldia}}',
+    "fechaingreso" = '{{update_form.fieldState.fechaingreso.isVisible ? update_form.formData.fechaingreso : update_form.sourceData.fechaingreso}}',
+		"areadato" = '{{update_form.fieldState.areadato.isVisible ? update_form.formData.areadato : update_form.sourceData.areadato}}',
+		"gestionpor" = '{{update_form.fieldState.gestionpor.isVisible ? update_form.formData.gestionpor : update_form.sourceData.gestionpor}}',
+		"clasedato" = '{{update_form.fieldState.clasedato.isVisible ? update_form.formData.clasedato : update_form.sourceData.clasedato}}',
+		"tipovalordato" = '{{update_form.fieldState.tipovalordato.isVisible ? update_form.formData.tipovalordato : update_form.sourceData.tipovalordato}}',
+		"valordato" = '{{update_form.fieldState.valordato.isVisible ? update_form.formData.valordato : update_form.sourceData.valordato}}',
+		"parroquia" = '{{update_form.fieldState.parroquia.isVisible ? update_form.formData.parroquia : update_form.sourceData.parroquia}}'
+WHERE "id" = {{data_table.selectedRow.id}};

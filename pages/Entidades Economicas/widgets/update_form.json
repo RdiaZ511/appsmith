@@ -1,0 +1,1032 @@
+{
+  "animateLoading": true,
+  "autoGenerateForm": false,
+  "backgroundColor": "#ebebeb",
+  "borderColor": "#fff",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "0",
+  "bottomRow": 186,
+  "bottomRowBeforeCollapse": 186,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "childStylesheet": {
+    "ARRAY": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "cellBoxShadow": "none"
+    },
+    "CHECKBOX": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+    },
+    "CURRENCY_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "DATEPICKER": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "EMAIL_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "MULTILINE_TEXT_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "MULTISELECT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "NUMBER_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "OBJECT": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "cellBoxShadow": "none"
+    },
+    "PASSWORD_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "PHONE_NUMBER_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "RADIO_GROUP": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "boxShadow": "none"
+    },
+    "SELECT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    },
+    "SWITCH": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "boxShadow": "none"
+    },
+    "TEXT_INPUT": {
+      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none"
+    }
+  },
+  "disabledWhenInvalid": true,
+  "displayName": "JSON Form",
+  "dynamicBindingPathList": [
+    {
+      "key": "schema.__root_schema__.defaultValue"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "schema.__root_schema__.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.cellBorderRadius"
+    },
+    {
+      "key": "resetButtonStyles.buttonColor"
+    },
+    {
+      "key": "resetButtonStyles.borderRadius"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "submitButtonStyles.borderRadius"
+    },
+    {
+      "key": "submitButtonStyles.buttonColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.entidad.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.entidad.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.entidad.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.identificacion.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.identificacion.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.identificacion.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.municipio_parroquia.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.municipio_parroquia.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.direccion.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.direccion.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.direccion.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.ubicacion.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.ubicacion.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.ubicacion.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.fecha_inicio.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.fecha_inicio.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.fecha_inicio.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.telefono.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.telefono.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.telefono.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.tipo_entidad.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.tamano_entidad.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.tamano_entidad.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.tamano_entidad.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.contacto.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.contacto.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.contacto.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.telefono_contacto.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.telefono_contacto.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.telefono_contacto.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.web_entidad.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.web_entidad.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.web_entidad.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.instagram_entidad.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.instagram_entidad.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.instagram_entidad.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.twitter_entidad.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.twitter_entidad.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.twitter_entidad.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.facebook_entidad.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.facebook_entidad.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.facebook_entidad.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.capital_humano.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.capital_humano.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.capital_humano.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.productos.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.productos.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.productos.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.capacidad_produccion.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.capacidad_produccion.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.capacidad_produccion.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.instalada.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.instalada.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.instalada.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.operativa.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.operativa.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.operativa.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.participacion_mercado.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.participacion_mercado.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.participacion_mercado.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.materia_prima.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.materia_prima.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.materia_prima.accentColor"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "schema.__root_schema__.children.codigo.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.codigo.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.codigo.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.customField1.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.customField1.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.customField1.options"
+    },
+    {
+      "key": "schema.__root_schema__.children.customField1.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.municipio_parroquia.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.tipo_entidad.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.tipo_entidad.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.customField2.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.customField2.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.customField2.defaultValue"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "schema.__root_schema__.children.date_of_birth.defaultValue"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "onSubmit"
+    },
+    {
+      "key": "schema.__root_schema__.children.fecha_inicio.defaultValue"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onSubmit"
+    }
+  ],
+  "fieldLimitExceeded": false,
+  "fixedFooter": false,
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.6bacf7df.svg",
+  "isLoading": false,
+  "isVisible": "{{!!data_table.selectedRow.codigo}}",
+  "key": "h9l9ozr8op",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 40,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "onSubmit": "{{UpdateQuery.run(() => SelectQuery.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
+  "originalBottomRow": 186,
+  "originalTopRow": 0,
+  "parentColumnSpace": 16.3125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetButtonLabel": "Sin Cambios",
+  "resetButtonStyles": {
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "boxShadow": "none",
+    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+    "buttonVariant": "SECONDARY"
+  },
+  "rightColumn": 64,
+  "schema": {
+    "__root_schema__": {
+      "accessor": "__root_schema__",
+      "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+      "boxShadow": "none",
+      "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+      "cellBoxShadow": "none",
+      "children": {
+        "capacidad_produccion": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "capacidad_produccion",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.capacidad_produccion))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "capacidad_produccion",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Capacidad en Produccion",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "capacidad_produccion",
+          "position": 20,
+          "sourceData": "N/A"
+        },
+        "capital_humano": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "capital_humano",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "number",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.capital_humano))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Number Input",
+          "iconAlign": "left",
+          "identifier": "capital_humano",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Capital Humano",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "capital_humano",
+          "position": 17,
+          "sourceData": 100
+        },
+        "codigo": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "codigo",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "number",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.codigo))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Number Input",
+          "iconAlign": "left",
+          "identifier": "codigo",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": false,
+          "label": "Codigo",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "codigo",
+          "position": 24,
+          "sourceData": 6
+        },
+        "contacto": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "contacto",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.contacto))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "contacto",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Contacto",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "contacto",
+          "position": 12,
+          "sourceData": "Luis Cano"
+        },
+        "customField1": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "municipio_parroquia_2",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => ( data_table.selectedRow.municipio_parroquia ))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Select",
+          "identifier": "customField1",
+          "isCustomField": true,
+          "isDisabled": false,
+          "isFilterable": false,
+          "isRequired": false,
+          "isVisible": true,
+          "label": "Parroquia - \nMunicipio",
+          "labelTextSize": "0.875rem",
+          "options": "{{Parroquias_Municipios.data}}",
+          "originalIdentifier": "customField1",
+          "position": 2,
+          "serverSideFiltering": false,
+          "sourceData": ""
+        },
+        "customField2": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "sector",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.sector))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Select",
+          "identifier": "customField2",
+          "isCustomField": true,
+          "isDisabled": false,
+          "isFilterable": false,
+          "isRequired": false,
+          "isVisible": true,
+          "label": "Sector Economico",
+          "labelTextSize": "0.875rem",
+          "options": "[\n  {\n    \"label\": \"Comercio\",\n    \"value\": \"1\"\n  },\n  {\n    \"label\": \"Industrial\",\n    \"value\": \"2\"\n  },\n  {\n    \"label\": \"Turistico\",\n    \"value\": \"3\"\n  },\n  {\n    \"label\": \"Agropecuario\",\n    \"value\": \"4\"\n  },\n  {\n    \"label\": \"Servicios\",\n    \"value\": \"5\"\n  },\n  {\n    \"label\": \"Educacion\",\n    \"value\": \"6\"\n  }\n]",
+          "originalIdentifier": "customField2",
+          "position": 8,
+          "serverSideFiltering": false,
+          "sourceData": ""
+        },
+        "direccion": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "direccion",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.direccion))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "direccion",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Direccion",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "direccion",
+          "position": 4,
+          "sourceData": "Av. Bolívar Norte"
+        },
+        "entidad": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "entidad",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.entidad))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "entidad",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Entidad",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "entidad",
+          "position": 0,
+          "sourceData": "JAC Motors Venezuela"
+        },
+        "facebook_entidad": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "facebook_entidad",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.facebook_entidad))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Email Input",
+          "iconAlign": "left",
+          "identifier": "facebook_entidad",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Correo Electronico",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "facebook_entidad",
+          "position": 11,
+          "shouldAllowAutofill": true,
+          "sourceData": ""
+        },
+        "fecha_inicio": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "fecha_inicio",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "closeOnSelection": false,
+          "convertToISO": false,
+          "dataType": "string",
+          "dateFormat": "DD-MM-YYYY",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (moment(sourceData.fecha_inicio, \"YYYY-MM-DD\").format(\"YYYY-MM-DDTHH:mm:ss.sssZ\")))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Datepicker",
+          "identifier": "fecha_inicio",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isVisible": true,
+          "label": "Fecha Inicio Operaciones",
+          "labelTextSize": "0.875rem",
+          "maxDate": "2121-12-31T18:29:00.000Z",
+          "minDate": "1920-12-31T18:30:00.000Z",
+          "originalIdentifier": "fecha_inicio",
+          "position": 6,
+          "shortcuts": false,
+          "sourceData": "2020-01-01",
+          "timePrecision": "minute"
+        },
+        "identificacion": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "identificacion",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.identificacion))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "identificacion",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Identificacion (Cedula/Rif))",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "identificacion",
+          "position": 1,
+          "sourceData": "J-40000000-0"
+        },
+        "instagram_entidad": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "instagram_entidad",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.instagram_entidad))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "instagram_entidad",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Instagram Entidad",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "instagram_entidad",
+          "position": 15,
+          "sourceData": ""
+        },
+        "instalada": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "instalada",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "number",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.instalada))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Number Input",
+          "iconAlign": "left",
+          "identifier": "instalada",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": false,
+          "label": "% Capacidad Instalada",
+          "labelTextSize": "0.875rem",
+          "maxNum": "100",
+          "minNum": "1",
+          "originalIdentifier": "instalada",
+          "position": 21,
+          "sourceData": 1
+        },
+        "materia_prima": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "materia_prima",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.materia_prima))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "materia_prima",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Materia Prima Requerida",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "materia_prima",
+          "position": 23,
+          "sourceData": "Vehículos, repuestos"
+        },
+        "municipio_parroquia": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "municipio_parroquia",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "number",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (formData.municipio_parroquia_2))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "municipio_parroquia",
+          "isCustomField": false,
+          "isDisabled": true,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Codigo Ubicacion",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "municipio_parroquia",
+          "position": 3,
+          "sourceData": "1408"
+        },
+        "operativa": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "operativa",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "number",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.operativa))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "operativa",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "% Capacidad Operativa",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "operativa",
+          "position": 19,
+          "sourceData": 1
+        },
+        "participacion_mercado": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "participacion_mercado",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "number",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.participacion_mercado))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Number Input",
+          "iconAlign": "left",
+          "identifier": "participacion_mercado",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "% Participacion Mercado",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "participacion_mercado",
+          "position": 22,
+          "sourceData": 5
+        },
+        "productos": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "productos",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.productos))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "productos",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Productos",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "productos",
+          "position": 18,
+          "sourceData": "Vehículos"
+        },
+        "tamano_entidad": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "tamano_entidad",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.tamano_entidad))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Select",
+          "identifier": "tamano_entidad",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isFilterable": false,
+          "isRequired": false,
+          "isVisible": true,
+          "label": "Tamano Entidad",
+          "labelTextSize": "0.875rem",
+          "options": "[\n  {\n    \"label\": \"Micro\",\n    \"value\": \"1\"\n  },\n  {\n    \"label\": \"Pequeño\",\n    \"value\": \"2\"\n  },\n  {\n    \"label\": \"Mediano\",\n    \"value\": \"3\"\n  }\n\t,\n  {\n    \"label\": \"Grande\",\n    \"value\": \"4\"\n  }\n]",
+          "originalIdentifier": "tamano_entidad",
+          "position": 9,
+          "serverSideFiltering": false,
+          "sourceData": "2"
+        },
+        "telefono": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "telefono",
+          "allowDialCodeChange": false,
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.telefono))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "dialCode": "+58",
+          "fieldType": "Phone Number Input",
+          "identifier": "telefono",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Telefono",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "telefono",
+          "position": 7,
+          "sourceData": "+58 241 000 0000"
+        },
+        "telefono_contacto": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "telefono_contacto",
+          "allowDialCodeChange": false,
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.telefono_contacto))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "dialCode": "+58",
+          "fieldType": "Phone Number Input",
+          "identifier": "telefono_contacto",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Telefono Contacto",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "telefono_contacto",
+          "position": 13,
+          "sourceData": "+58 412 000 0000"
+        },
+        "tipo_entidad": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "tipo_entidad",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.tipo_entidad))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Select",
+          "identifier": "tipo_entidad",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isFilterable": false,
+          "isRequired": false,
+          "isVisible": true,
+          "label": "Tipo Entidad",
+          "labelTextSize": "0.875rem",
+          "options": "[\n  {\n    \"label\": \"Publico\",\n    \"value\": \"1\"\n  },\n  {\n    \"label\": \"Privado\",\n    \"value\": \"2\"\n  },\n  {\n    \"label\": \"Mixto\",\n    \"value\": \"3\"\n  },\n  {\n    \"label\": \"Otro\",\n    \"value\": \"4\"\n  }\n\t\n]",
+          "originalIdentifier": "tipo_entidad",
+          "position": 10,
+          "serverSideFiltering": false,
+          "sourceData": "3"
+        },
+        "twitter_entidad": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "twitter_entidad",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.twitter_entidad))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "twitter_entidad",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Twitter Entidad",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "twitter_entidad",
+          "position": 16,
+          "sourceData": ""
+        },
+        "ubicacion": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "ubicacion",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.ubicacion))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "ubicacion",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Ubicacion GPS",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "ubicacion",
+          "position": 5,
+          "sourceData": "Valencia"
+        },
+        "web_entidad": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "web_entidad",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.web_entidad))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "web_entidad",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Web Entidad",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "web_entidad",
+          "position": 14,
+          "sourceData": "www.jacmotors.com.ve"
+        }
+      },
+      "dataType": "object",
+      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+      "fieldType": "Object",
+      "identifier": "__root_schema__",
+      "isCustomField": false,
+      "isDisabled": false,
+      "isRequired": false,
+      "isVisible": true,
+      "label": "",
+      "labelTextSize": "0.875rem",
+      "originalIdentifier": "__root_schema__",
+      "position": -1,
+      "sourceData": {
+        "capacidad_produccion": "N/A",
+        "capital_humano": 100,
+        "codigo": 6,
+        "contacto": "Luis Cano",
+        "direccion": "Av. Bolívar Norte",
+        "entidad": "JAC Motors Venezuela",
+        "facebook_entidad": "",
+        "fecha_inicio": "2020-01-01",
+        "identificacion": "J-40000000-0",
+        "instagram_entidad": "",
+        "instalada": 1,
+        "materia_prima": "Vehículos, repuestos",
+        "municipio_parroquia": "1408",
+        "operativa": 1,
+        "participacion_mercado": 5,
+        "productos": "Vehículos",
+        "tamano_entidad": "2",
+        "telefono": "+58 241 000 0000",
+        "telefono_contacto": "+58 412 000 0000",
+        "tipo_entidad": "3",
+        "twitter_entidad": "",
+        "ubicacion": "Valencia",
+        "web_entidad": "www.jacmotors.com.ve"
+      }
+    }
+  },
+  "scrollContents": false,
+  "showReset": true,
+  "sourceData": "{{data_table.selectedRow}}",
+  "submitButtonLabel": "Actualizar",
+  "submitButtonStyles": {
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "boxShadow": "none",
+    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+    "buttonVariant": "PRIMARY"
+  },
+  "title": "Detalles de Entidades",
+  "topRow": 0,
+  "topRowBeforeCollapse": 0,
+  "type": "JSON_FORM_WIDGET",
+  "useSourceData": false,
+  "version": 1,
+  "widgetId": "y5cjzuxnb3",
+  "widgetName": "update_form"
+}

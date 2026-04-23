@@ -1,0 +1,4 @@
+SELECT DISTINCT parroquia AS label, parroquia as value, municipio AS municipio_id
+FROM public."parroquias_carabobo" 
+WHERE municipio = {{alcaldia.selectedOptionValue || 'NINGUNO'}}
+ORDER BY parroquia

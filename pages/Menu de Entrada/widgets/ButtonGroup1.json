@@ -1,0 +1,212 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 41,
+  "boxShadow": "none",
+  "buttonVariant": "SECONDARY",
+  "childStylesheet": {
+    "button": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "groupButtons.groupButton1.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton2.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton3.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButtonpcvuzfvj3l.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButtonj0hx2thhmn.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButtonb2vr4ulylb.buttonColor"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButton1.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton2.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton3.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonb2vr4ulylb.onClick"
+    }
+  ],
+  "groupButtons": {
+    "groupButton1": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "disabledWhenInvalid": false,
+      "iconAlign": "right",
+      "iconName": "grouped-bar-chart",
+      "id": "groupButton1",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Entidades Economicas del Estado Carabobo",
+      "menuItems": {},
+      "onClick": "{{navigateTo('Public.entidad', {}, 'SAME_WINDOW');}}",
+      "placement": "BETWEEN",
+      "widgetId": ""
+    },
+    "groupButton2": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "disabledWhenInvalid": false,
+      "iconAlign": "right",
+      "iconName": "build",
+      "id": "groupButton2",
+      "index": 2,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Infraestructura del Estado Carabobo",
+      "menuItems": {},
+      "onClick": "{{navigateTo('Procesar Datos', {}, 'SAME_WINDOW');}}",
+      "placement": "BETWEEN",
+      "widgetId": ""
+    },
+    "groupButton3": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "disabledWhenInvalid": false,
+      "iconAlign": "right",
+      "iconName": "map",
+      "id": "groupButton3",
+      "index": 4,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Geolocalizacion de Eventos",
+      "menuItems": {
+        "menuItem1": {
+          "backgroundColor": "#FFFFFF",
+          "disabledWhenInvalid": false,
+          "id": "menuItem1",
+          "index": 0,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "First Option",
+          "onClick": "",
+          "widgetId": ""
+        },
+        "menuItem2": {
+          "backgroundColor": "#FFFFFF",
+          "disabledWhenInvalid": false,
+          "id": "menuItem2",
+          "index": 1,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Second Option",
+          "onClick": "",
+          "widgetId": ""
+        },
+        "menuItem3": {
+          "backgroundColor": "#DD4B34",
+          "disabledWhenInvalid": false,
+          "iconAlign": "right",
+          "iconColor": "#FFFFFF",
+          "iconName": "trash",
+          "id": "menuItem3",
+          "index": 2,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Delete",
+          "onClick": "",
+          "textColor": "#FFFFFF",
+          "widgetId": ""
+        }
+      },
+      "onClick": "{{navigateTo('Mapa Base Carabobo', {}, 'SAME_WINDOW');}}",
+      "placement": "BETWEEN",
+      "widgetId": ""
+    },
+    "groupButtonb2vr4ulylb": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "iconAlign": "right",
+      "iconName": "history",
+      "id": "groupButtonb2vr4ulylb",
+      "index": 3,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Bitacora Infraestructura del Estado Carabobo",
+      "menuItems": {},
+      "onClick": "{{navigateTo('Public.alcaldiainfraestructura', {}, 'SAME_WINDOW');}}",
+      "placement": "BETWEEN",
+      "variant": "filled",
+      "widgetId": "0q08ilzeti"
+    },
+    "groupButtonj0hx2thhmn": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "iconAlign": "right",
+      "iconName": "annotation",
+      "id": "groupButtonj0hx2thhmn",
+      "index": 1,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Bitacora de Entidades Economicas",
+      "menuItems": {},
+      "placement": "BETWEEN",
+      "variant": "filled",
+      "widgetId": "n2k48hx88e"
+    },
+    "groupButtonpcvuzfvj3l": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "iconAlign": "right",
+      "iconName": "array-timestamp",
+      "id": "groupButtonpcvuzfvj3l",
+      "index": 5,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Timelapse de Eventos",
+      "menuItems": {},
+      "placement": "BETWEEN",
+      "variant": "filled",
+      "widgetId": "ftlv7vwo5w"
+    }
+  },
+  "isCanvas": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "nmz7hwvobq",
+  "leftColumn": 19,
+  "minWidth": 450,
+  "mobileBottomRow": 32,
+  "mobileLeftColumn": 14,
+  "mobileRightColumn": 38,
+  "mobileTopRow": 28,
+  "needsErrorInfo": false,
+  "orientation": "vertical",
+  "parentColumnSpace": 11.1875,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 47,
+  "topRow": 26,
+  "type": "BUTTON_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "bk2p3yvk2h",
+  "widgetName": "ButtonGroup1"
+}

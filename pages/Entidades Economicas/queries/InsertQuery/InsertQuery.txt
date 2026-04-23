@@ -1,0 +1,26 @@
+INSERT INTO public."entidad" (
+	"entidad",
+	"identificacion",
+	"municipio_parroquia",
+	"direccion",
+	"ubicacion",
+	"fecha_inicio",
+	"telefono",
+	"tipo_entidad",
+	"tamano_entidad",
+	"contacto",
+	"telefono_contacto"
+)
+VALUES (
+	'{{insert_form.formData.entidad}}',
+	'{{insert_form.formData.identificacion}}',
+	'{{insert_form.formData.municipio_parroquia}}',
+	'{{insert_form.formData.direccion}}',
+	'{{insert_form.formData.ubicacion}}',
+	'{{insert_form.formData.fecha_inicio}}',
+	'{{insert_form.formData.telefono}}',
+	'{{insert_form.formData.tipo_entidad}}',
+	'{{insert_form.formData.tamano_entidad}}',
+	'{{insert_form.formData.contacto}}',
+	'{{insert_form.formData.telefono_contacto}}'
+);

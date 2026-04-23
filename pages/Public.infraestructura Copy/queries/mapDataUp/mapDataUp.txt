@@ -1,0 +1,31 @@
+WITH selected_filters AS (
+    SELECT 
+        {{!alcaldia.selectedOptionValue ? null : alcaldia.selectedOptionValue}} as selected_municipio,
+        {{!parroquia.selectedOptionValue ? null : parroquia.selectedOptionValue}} as selected_parroquia
+)
+SELECT 
+    jsonb_build_object(
+        'type', 'FeatureCollection',
+        'features', jsonb_agg(
+            jsonb_build_object(
+                'type', 'Feature',
+                'geometry', ST_AsGeoJSON(p.geom)::jsonb,
+                'properties', jsonb_build_object(
+                    'parroquia', p.parroquia,
+                    'municipio', p.municipio,
+                    'highlight_status', 
+                        CASE 
+                            WHEN sp.selected_parroquia IS NOT NULL AND p.parroquia = sp.selected_parroquia THEN 'highlight_parroquia'
+                            WHEN sp.selected_municipio IS NOT NULL AND sp.selected_parroquia IS NULL AND p.municipio = sp.selected_municipio THEN 'highlight_municipio'
+                            ELSE 'default'
+                        END
+                )
+            )
+        )
+    ) AS geojson_collection
+FROM parroquias_carabobo p
+CROSS JOIN selected_filters sp
+WHERE 
+    (sp.selected_municipio IS NULL AND sp.selected_parroquia IS NULL)
+    OR (sp.selected_parroquia IS NOT NULL AND p.parroquia = sp.selected_parroquia)
+    OR (sp.selected_municipio IS NOT NULL AND sp.selected_parroquia IS NULL AND p.municipio = sp.selected_municipio)
