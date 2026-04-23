@@ -59,7 +59,7 @@
       "isVisible": true,
       "label": "Entidades Economicas del Estado Carabobo",
       "menuItems": {},
-      "onClick": "{{navigateTo('Public.entidad', {}, 'SAME_WINDOW');}}",
+      "onClick": "{{navigateTo('Entidades Economicas', {}, 'SAME_WINDOW');}}",
       "placement": "BETWEEN",
       "widgetId": ""
     },
@@ -75,7 +75,7 @@
       "isVisible": true,
       "label": "Infraestructura del Estado Carabobo",
       "menuItems": {},
-      "onClick": "{{navigateTo('Procesar Datos', {}, 'SAME_WINDOW');}}",
+      "onClick": "{{navigateTo('Public.alcaldiainfraestructura', {}, 'SAME_WINDOW');}}",
       "placement": "BETWEEN",
       "widgetId": ""
     },
