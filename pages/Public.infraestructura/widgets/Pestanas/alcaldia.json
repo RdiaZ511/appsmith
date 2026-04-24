@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 8,
   "boxShadow": "none",
-  "defaultOptionValue": "\n",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  .selectedRow.municipio_parroquia ))(alcaldia.options, alcaldia.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,6 +14,9 @@
     },
     {
       "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -47,18 +50,18 @@
   "mobileRightColumn": 23,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onOptionChange": "{{fetch_infraestructura.run();\nget_infra_stats.run();}}",
-  "optionLabel": "municipio",
-  "optionValue": "municipio_id",
+  "onOptionChange": "{{fetch_infraestructura.run();}}",
+  "optionLabel": "label",
+  "optionValue": "value",
   "parentColumnSpace": 16.375,
   "parentId": "e2t8h48i45",
   "parentRowSpace": 10,
   "placeholderText": "Seleccione una alcaldia",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 13,
+  "rightColumn": 16,
   "serverSideFiltering": false,
-  "sourceData": "{{get_municipios.data}}",
+  "sourceData": "{{Parroquias_Municipios.data}}",
   "topRow": 1,
   "type": "SELECT_WIDGET",
   "version": 1,

@@ -5,12 +5,12 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": 1,
-  "bottomRow": 82,
+  "bottomRow": 86,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 690,
+      "bottomRow": 730,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -47,7 +47,7 @@
       "rightColumn": 233.625,
       "shouldScrollContents": false,
       "tabId": "tab1",
-      "tabName": "Infraestructura",
+      "tabName": "Datos de Infraestructura",
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
@@ -83,7 +83,7 @@
   "mobileRightColumn": 14,
   "mobileTopRow": 23,
   "needsErrorInfo": false,
-  "originalBottomRow": 82,
+  "originalBottomRow": 86,
   "originalTopRow": 9,
   "parentColumnSpace": 16.6875,
   "parentId": "0",
@@ -98,7 +98,7 @@
       "id": "tab1",
       "index": 0,
       "isVisible": true,
-      "label": "Infraestructura",
+      "label": "Datos de Infraestructura",
       "positioning": "vertical",
       "widgetId": "e2t8h48i45"
     }

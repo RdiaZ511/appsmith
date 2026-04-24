@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM alcaldiaInfraestructura\nWHERE\n    ( {{!alcaldia.selectedOptionValue}} OR alcaldia = {{alcaldia.selectedOptionValue}} ) AND\n\t\t( {{!parroquia.selectedOptionValue}} OR parroquia = {{parroquia.selectedOptionValue}} ) AND\n    ( {{!tipoDato.selectedOptionValue}} OR areaDato = {{tipoDato.selectedOptionValue}} ) AND\n    ( {{!gestionPor.selectedOptionValue}} OR gestionPor = {{gestionPor.selectedOptionValue}} ) AND\n    ( {{!claseDato.selectedOptionValue}} OR claseDato = {{claseDato.selectedOptionValue}} )\nORDER BY id DESC\nLIMIT {{Table_infra.pageSize}}\nOFFSET {{Table_infra.pageOffset}};",
+      "body": "SELECT \n    id,\n    alcaldia,\n    fechaingreso,\n    areadato,\n    gestionpor,\n    CASE clasedato\n        WHEN '1' THEN 'Evento'\n        WHEN '2' THEN 'Informacion'\n        WHEN '3' THEN 'Estadistico'\n        WHEN '4' THEN 'Ubicacion'\n        ELSE clasedato\n    END AS clasedato,\n    datoespecifico,\n    tipovalordato,\n    valordato,\n    parroquia,\n    indice\nFROM alcaldiainfraestructura\nWHERE\n    ( {{!alcaldia.selectedOptionValue}} OR indice = {{alcaldia.selectedOptionValue}} ) AND\n    ( {{!tipoDato.selectedOptionValue}} OR areadato = {{tipoDato.selectedOptionValue}} ) AND\n    ( {{!gestionPor.selectedOptionValue}} OR gestionpor = {{gestionPor.selectedOptionValue}} ) AND\n    ( {{!claseDato.selectedOptionValue}} OR clasedato = {{claseDato.selectedOptionValue}} )\nORDER BY id DESC\nLIMIT {{Table_infra.pageSize}}\nOFFSET {{Table_infra.pageOffset}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

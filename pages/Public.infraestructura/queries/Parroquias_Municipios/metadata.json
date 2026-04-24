@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "69a30fc86ccf20395271dfd4_c9169c9a-ad5d-4abe-ac81-27c3ac81a297",
-  "id": "Public.infraestructura_get_municipios",
+  "gitSyncId": "69e9b8d517dc3fe97d57d3a1_1d2230a9-a4a5-4a2f-a470-e065e60129a7",
+  "id": "Public.infraestructura_Parroquias_Municipios",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT DISTINCT municipio, municipio as municipio_id FROM public.\"parroquias_carabobo\" ORDER BY municipio",
+      "body": "SELECT TRIM(public.parroquias_carabobo.municipio)||', '||TRIM(public.parroquias_carabobo.parroquia) as label, public.parroquias_carabobo.indice as value FROM public.\"parroquias_carabobo\" order by indice;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -23,9 +23,9 @@
       "pluginId": "postgres-plugin"
     },
     "dynamicBindingPathList": [],
-    "name": "get_municipios",
+    "name": "Parroquias_Municipios",
     "pageId": "Public.infraestructura",
-    "runBehaviour": "MANUAL",
+    "runBehaviour": "AUTOMATIC",
     "userSetOnLoad": false
   }
 }

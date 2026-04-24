@@ -3,7 +3,7 @@
   "animateLoading": false,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 23,
+  "bottomRow": 25,
   "boxShadow": "none",
   "defaultText": "",
   "dynamicBindingPathList": [
@@ -55,7 +55,7 @@
   "rightColumn": 64,
   "showStepArrows": false,
   "tooltip": "Escriba el dato a registrar y vea si existe un coincidente",
-  "topRow": 16,
+  "topRow": 18,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "nivmps0jib",

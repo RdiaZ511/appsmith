@@ -1,10 +1,27 @@
-SELECT * FROM alcaldiaInfraestructura
+SELECT 
+    id,
+    alcaldia,
+    fechaingreso,
+    areadato,
+    gestionpor,
+    CASE clasedato
+        WHEN '1' THEN 'Evento'
+        WHEN '2' THEN 'Informacion'
+        WHEN '3' THEN 'Estadistico'
+        WHEN '4' THEN 'Ubicacion'
+        ELSE clasedato
+    END AS clasedato,
+    datoespecifico,
+    tipovalordato,
+    valordato,
+    parroquia,
+    indice
+FROM alcaldiainfraestructura
 WHERE
-    ( {{!alcaldia.selectedOptionValue}} OR alcaldia = {{alcaldia.selectedOptionValue}} ) AND
-		( {{!parroquia.selectedOptionValue}} OR parroquia = {{parroquia.selectedOptionValue}} ) AND
-    ( {{!tipoDato.selectedOptionValue}} OR areaDato = {{tipoDato.selectedOptionValue}} ) AND
-    ( {{!gestionPor.selectedOptionValue}} OR gestionPor = {{gestionPor.selectedOptionValue}} ) AND
-    ( {{!claseDato.selectedOptionValue}} OR claseDato = {{claseDato.selectedOptionValue}} )
+    ( {{!alcaldia.selectedOptionValue}} OR indice = {{alcaldia.selectedOptionValue}} ) AND
+    ( {{!tipoDato.selectedOptionValue}} OR areadato = {{tipoDato.selectedOptionValue}} ) AND
+    ( {{!gestionPor.selectedOptionValue}} OR gestionpor = {{gestionPor.selectedOptionValue}} ) AND
+    ( {{!claseDato.selectedOptionValue}} OR clasedato = {{claseDato.selectedOptionValue}} )
 ORDER BY id DESC
 LIMIT {{Table_infra.pageSize}}
 OFFSET {{Table_infra.pageOffset}};
