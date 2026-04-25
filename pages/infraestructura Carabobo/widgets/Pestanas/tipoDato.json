@@ -1,0 +1,64 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 5,
+  "boxShadow": "none",
+  "defaultOptionValue": "0\n",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "isDisabled": false,
+  "isFilterable": false,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "ljymlqr3dr",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Area del dato",
+  "labelTextSize": "1rem",
+  "labelWidth": 5,
+  "leftColumn": 32,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 9,
+  "mobileLeftColumn": 31,
+  "mobileRightColumn": 51,
+  "mobileTopRow": 2,
+  "needsErrorInfo": false,
+  "onOptionChange": "{{fetch_infraestructura.run()}}",
+  "optionLabel": "name",
+  "optionValue": "code",
+  "parentColumnSpace": 16.375,
+  "parentId": "e2t8h48i45",
+  "parentRowSpace": 10,
+  "placeholderText": "Seleccione una opcion",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 44,
+  "serverSideFiltering": false,
+  "sourceData": "[\n\t{\n    \"name\": \"Agua Potable\",\n    \"code\": \"1\"\n  },\n  {\n    \"name\": \"Agua Residual\",\n    \"code\": \"2\"\n  },\n\t{\n    \"name\": \"Alumbrado\",\n    \"code\": \"3\"\n  },\n  {\n    \"name\": \"Educacion\",\n    \"code\": \"4\"\n  },\n\t{\n    \"name\": \"Electricidad\",\n    \"code\": \"5\"\n  },\n\t{\n    \"name\": \"Espacios Publicos\",\n    \"code\": \"6\"\n  },\n  {\n    \"name\": \"Residuos Solidos\",\n    \"code\": \"7\"\n  },\n\t{\n    \"name\": \"Salud\",\n    \"code\": \"8\"\n  },\n  {\n    \"name\": \"Seguridad\",\n    \"code\": \"9\"\n  },\n \t{\n    \"name\": \"Telecomunicaciones\",\n    \"code\": \"10\"\n  },\n \t{\n    \"name\": \"Transporte\",\n    \"code\": \"11\"\n  },\n\n {\n    \"name\": \"Vialidad\",\n    \"code\": \"12\"\n  }\n]",
+  "topRow": 1,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "y3ibscoife",
+  "widgetName": "tipoDato"
+}
