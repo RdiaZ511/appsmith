@@ -101,6 +101,9 @@
     },
     {
       "key": "primaryColumns.indice.computedValue"
+    },
+    {
+      "key": "totalRecordsCount"
     }
   ],
   "dynamicPropertyPathList": [
@@ -139,6 +142,7 @@
   "parentColumnSpace": 16.375,
   "parentId": "e2t8h48i45",
   "parentRowSpace": 10,
+  "primaryColumnId": "fechaingreso",
   "primaryColumns": {
     "alcaldia": {
       "alias": "alcaldia",
@@ -226,7 +230,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "clasedato",
+      "label": "Clase de dato",
       "notation": "standard",
       "originalId": "clasedato",
       "sticky": "",
@@ -279,7 +283,7 @@
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
-      "horizontalAlignment": "LEFT",
+      "horizontalAlignment": "CENTER",
       "id": "fechaingreso",
       "index": 2,
       "isCellEditable": false,
@@ -293,6 +297,7 @@
       "label": "Fecha de ingreso",
       "notation": "standard",
       "originalId": "fechaingreso",
+      "outputFormat": "DD/MM/YYYY",
       "sticky": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
@@ -505,7 +510,7 @@
   "tableData": "{{fetch_infraestructura.data}}",
   "textSize": "0.875rem",
   "topRow": 31,
-  "totalRecordsCount": "30",
+  "totalRecordsCount": "{{fetch_infraestructura.data.length}}",
   "type": "TABLE_WIDGET_V2",
   "variant": "VARIANT2",
   "version": 2,

@@ -15,9 +15,9 @@ SELECT
         ELSE areadato
     END AS x,
     COUNT(*) AS y
-FROM alcaldiainfraestructura ai
+FROM alcaldiainfraestructura
 WHERE
-    ( {{!alcaldia.selectedOptionValue}} OR LEFT(indice, 2)  = {{alcaldia.selectedOptionValue.substring(0, 2)}}) AND
+    ( {{!alcaldia.selectedOptionValue}} OR indice = {{alcaldia.selectedOptionValue}} ) AND
     ( {{!tipoDato.selectedOptionValue}} OR areadato = {{tipoDato.selectedOptionValue}} ) AND
     ( {{!gestionPor.selectedOptionValue}} OR gestionpor = {{gestionPor.selectedOptionValue}} ) AND
     ( {{!claseDato.selectedOptionValue}} OR clasedato = {{claseDato.selectedOptionValue}} )

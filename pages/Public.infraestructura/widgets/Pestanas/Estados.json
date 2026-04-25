@@ -21,6 +21,9 @@
     },
     {
       "key": "groupButtons.groupButtonyikn4lalii.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButtonwoljlei88w.buttonColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -40,6 +43,9 @@
     },
     {
       "key": "groupButtons.groupButtonyikn4lalii.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonwoljlei88w.onClick"
     }
   ],
   "groupButtons": {
@@ -47,6 +53,7 @@
       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
       "buttonType": "SIMPLE",
       "disabledWhenInvalid": true,
+      "iconAlign": "right",
       "iconName": "saved",
       "id": "groupButton1",
       "index": 0,
@@ -62,6 +69,7 @@
       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
       "buttonType": "SIMPLE",
       "disabledWhenInvalid": false,
+      "iconAlign": "right",
       "iconName": "eraser",
       "id": "groupButton2",
       "index": 1,
@@ -73,16 +81,36 @@
       "placement": "CENTER",
       "widgetId": ""
     },
+    "groupButtonwoljlei88w": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "iconAlign": "right",
+      "iconName": "grouped-bar-chart",
+      "id": "groupButtonwoljlei88w",
+      "index": 3,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Grafico por Parroquia",
+      "menuItems": {},
+      "onClick": "{{graph_areadato_parroquia.run();\nshowModal(Modal3.name);}}",
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "6buu2irrms"
+    },
     "groupButtonyikn4lalii": {
       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
       "buttonType": "SIMPLE",
+      "iconAlign": "right",
+      "iconName": "grouped-bar-chart",
       "id": "groupButtonyikn4lalii",
       "index": 2,
       "isDisabled": false,
       "isSeparator": false,
       "isVisible": true,
       "itemType": "BUTTON",
-      "label": "Ver Balance en Graficos",
+      "label": "Grafico por Municipio",
       "menuItems": {},
       "onClick": "{{graph_areadato.run().then(() => {\n  showModal(Modal2.name);\n});}}",
       "placement": "CENTER",
@@ -111,7 +139,7 @@
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 64,
-  "topRow": 26,
+  "topRow": 25,
   "type": "BUTTON_GROUP_WIDGET",
   "version": 1,
   "widgetId": "nbp81f72zz",
