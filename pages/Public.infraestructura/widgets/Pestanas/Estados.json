@@ -84,7 +84,7 @@
       "itemType": "BUTTON",
       "label": "Ver Balance en Graficos",
       "menuItems": {},
-      "onClick": "{{showModal(Modal2.name);}}",
+      "onClick": "{{graph_areadato.run().then(() => {\n  showModal(Modal2.name);\n});}}",
       "placement": "CENTER",
       "variant": "filled",
       "widgetId": "3paw10lgss"

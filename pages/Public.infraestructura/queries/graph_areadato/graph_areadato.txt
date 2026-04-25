@@ -1,0 +1,25 @@
+SELECT 
+    CASE areadato
+        WHEN '1' THEN 'Agua Potable'
+        WHEN '2' THEN 'Agua Residual'
+        WHEN '3' THEN 'Alumbrado'
+        WHEN '4' THEN 'Educacion'
+        WHEN '5' THEN 'Electricidad'
+        WHEN '6' THEN 'Espacios Publicos'
+        WHEN '7' THEN 'Residuos Solidos'
+        WHEN '8' THEN 'Salud'
+        WHEN '9' THEN 'Seguridad'
+        WHEN '10' THEN 'Telecomunicaciones'
+        WHEN '11' THEN 'Transporte'
+        WHEN '12' THEN 'Vialidad'
+        ELSE areadato
+    END AS x,
+    COUNT(*) AS y
+FROM alcaldiainfraestructura
+WHERE
+    ( {{!alcaldia.selectedOptionValue}} OR indice = {{alcaldia.selectedOptionValue}} ) AND
+    ( {{!tipoDato.selectedOptionValue}} OR areadato = {{tipoDato.selectedOptionValue}} ) AND
+    ( {{!gestionPor.selectedOptionValue}} OR gestionpor = {{gestionPor.selectedOptionValue}} ) AND
+    ( {{!claseDato.selectedOptionValue}} OR clasedato = {{claseDato.selectedOptionValue}} )
+GROUP BY areadato
+ORDER BY y ASC;
