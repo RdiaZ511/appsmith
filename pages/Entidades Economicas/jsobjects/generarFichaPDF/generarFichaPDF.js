@@ -1,5 +1,27 @@
 export default {
   async imprimir() {
+    // DIAGNÓSTICO: ver qué tiene el form completo
+ console.log("formData completo:", JSON.stringify(update_form.formData));
+console.log("store municipio:", appsmith.store.fichaPDF);
+    
+    // Ver cada campo individualmente
+    console.log("nombre:", update_form.formData.nombre);
+    console.log("direccion:", update_form.formData.direccion);
+    console.log("municipio_parroquia_2:", update_form.formData.municipio_parroquia_2);
+
+    // Mostrar en pantalla para confirmar
+    showAlert(JSON.stringify(update_form.formData), 'info');
+  }
+}	
+		
+		
+		const codigoSeleccionado = update_form.formData.municipio_parroquia_2;
+
+// Buscar el objeto completo en los datos del query
+const seleccionado = Parroquias_Municipios.data.find(
+  row => row.codigo === codigoSeleccionado  // ajusta "codigo" al nombre real de tu columna
+);
+		
     // 1. Tomar datos del formulario de Appsmith
     const datos = {
       nombre: update_form.formData.entidad,
@@ -11,24 +33,27 @@ export default {
 			ubicacion: update_form.formData.ubicacion,
 			sector: update_form.formData.sector,
       telefono: update_form.formData.telefono,
-      correo: Input_correo.text,
-      web: Input_web.text,
-      instagram: Input_instagram.text,
-      capitalHumano: Input_capitalHumano.text,
-      capacidadInstalada: Input_capacidadInstalada.text,
-      capacidadOperativa: Input_capacidadOperativa.text,
-      productos: Input_productos.text,
-      participacionMercado: Input_participacionMercado.text,
+			municipio:seleccionado?.municipio,
+  		parroquia:seleccionado?.parroquia,
+  		codigoCompleto:codigoSeleccionado,
+      correo: update_form.formData.facebook_entidad,
+      web: update_form.formData.web_entidad,
+      instagram: update_form.formData.instagram_entidad,
+      capitalHumano: update_form.formData.capital_humano,
+      capacidadInstalada: update_form.formData.operativa,
+      capacidadOperativa: update_form.formData.capacidad_produccion,
+      productos: update_form.formData.productos,
+      participacionMercado: update_form.formData.participacion_mercado,
     };
 
     // 2. Inyectar HTML con los datos en un iframe oculto y disparar print()
-    const htmlContent = generarFichaPDF.buildHTML(datos);
-    
-    const ventana = window.open('', '_blank');
-    ventana.document.write(htmlContent);
-    ventana.document.close();
-    ventana.focus();
-    ventana.print(); // Esto abre el diálogo "Guardar como PDF" del navegador
+   const htmlContent = this.buildHTML(datos);
+
+    // Guardar el HTML en el store de Appsmith
+    await storeValue('fichaPDF', htmlContent);
+
+    // Abrir modal que contiene el iframe
+    showModal('Modal_Ficha');
   },
 
   buildHTML(d) {
@@ -100,12 +125,12 @@ export default {
     </tr>
     <tr>
       <td>${d.rif}</td>
-      <td>${d.sector}</td>
-      <td>${d.fundacion}</td>
+      <td>${d.codigo_ubicacion}</td>
+      <td>${d.fecha_inicio}</td>
     </tr>
     <tr>
-      <td class="label">Descripción:</td>
-      <td colspan="2">${d.descripcion}</td>
+      <td class="label">Direccion:</td>
+      <td colspan="2">${d.direccion}</td>
     </tr>
     <tr>
       <td class="label">Tipo de Empresa:</td>
@@ -127,8 +152,8 @@ export default {
       <td class="label">Parroquia:</td><td>${d.parroquia}</td>
     </tr>
     <tr>
-      <td class="label">Dirección Física:</td>
-      <td colspan="3">${d.direccion}</td>
+      <td class="label">Dirección GPS:</td>
+      <td colspan="3">${d.ubicacion}</td>
     </tr>
     <tr>
       <td class="label-red">Teléfono</td>

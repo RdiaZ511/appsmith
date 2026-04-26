@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "69e9b8d517dc3fe97d57d3a1_c893aa54-1cca-4275-9dc2-dbe458d1999a",
+  "id": "Entidades Economicas_imprimirFichaPDF",
+  "unpublishedCollection": {
+    "name": "imprimirFichaPDF",
+    "pageId": "Entidades Economicas",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

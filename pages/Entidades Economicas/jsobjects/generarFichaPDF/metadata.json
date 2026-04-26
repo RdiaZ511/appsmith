@@ -1,8 +1,8 @@
 {
   "gitSyncId": "69e9b8d517dc3fe97d57d3a1_f5cddc89-154e-4b3c-9557-383d8e5d6221",
-  "id": "Entidades Economicas_JSObject2",
+  "id": "Entidades Economicas_generarFichaPDF",
   "unpublishedCollection": {
-    "name": "JSObject2",
+    "name": "generarFichaPDF",
     "pageId": "Entidades Economicas",
     "pluginId": "js-plugin",
     "pluginType": "JS",
