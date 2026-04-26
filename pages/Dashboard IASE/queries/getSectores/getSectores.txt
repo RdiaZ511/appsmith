@@ -1,1 +1,1 @@
-SELECT DISTINCT sector FROM v_iase ORDER BY sector;
+SELECT DISTINCT sector as name, sector as code FROM v_iase ORDER BY sector;

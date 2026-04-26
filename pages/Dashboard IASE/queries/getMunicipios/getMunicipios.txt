@@ -1,1 +1,1 @@
-SELECT DISTINCT municipio FROM v_iase ORDER BY municipio;
+SELECT DISTINCT municipio as name, municipio as code FROM v_iase ORDER BY municipio;

@@ -1,1 +1,1 @@
-SELECT DISTINCT tamano FROM v_iase ORDER BY tamano;
+SELECT DISTINCT tamano as name, tamano as code FROM v_iase ORDER BY tamano;

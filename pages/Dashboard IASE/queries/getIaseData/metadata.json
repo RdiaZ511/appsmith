@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT\n  sector,\n  municipio,\n  tamano,\n  total_entidades,\n  antiguedad_promedio,\n  clasificacion,\n  cnt_emergente,\n  cnt_consolidacion,\n  cnt_establecida,\n  cnt_madura,\n  cnt_ancla,\n  operativa_promedio\nFROM v_iase\nWHERE (sector ILIKE {{ '%' + sectorFilter.selectedOptionValue + '%' }} OR {{ sectorFilter.selectedOptionValue }} = 'Todos')\n  AND (municipio ILIKE {{ '%' + municipioFilter.selectedOptionValue + '%' }} OR {{ municipioFilter.selectedOptionValue }} = 'Todos')\n  AND (tamano ILIKE {{ '%' + tamanoFilter.selectedOptionValue + '%' }} OR {{ tamanoFilter.selectedOptionValue }} = 'Todos')\nORDER BY municipio, antiguedad_promedio DESC;",
+      "body": "SELECT\n  sector,\n  municipio,\n  tamano,\n  total_entidades,\n  antiguedad_promedio,\n  clasificacion,\n  cnt_emergente,\n  cnt_consolidacion,\n  cnt_establecida,\n  cnt_madura,\n  cnt_ancla,\n  operativa_promedio\nFROM v_iase\nWHERE ( {{!sectorFilter.selectedOptionValue}} OR sector = {{sectorFilter.selectedOptionValue}} )\n  AND ( {{!municipioFilter.selectedOptionValue}} OR municipio = {{municipioFilter.selectedOptionValue}} )\n  AND ( {{!tamanoFilter.selectedOptionValue}} OR tamano = {{tamanoFilter.selectedOptionValue}} )\nORDER BY municipio, antiguedad_promedio DESC;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
