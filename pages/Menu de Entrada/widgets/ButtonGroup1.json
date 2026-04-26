@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 41,
+  "bottomRow": 57,
   "boxShadow": "none",
   "buttonVariant": "SECONDARY",
   "childStylesheet": {
@@ -30,6 +30,9 @@
     },
     {
       "key": "groupButtons.groupButtonb2vr4ulylb.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton70hg52lbeh.buttonColor"
     }
   ],
   "dynamicTriggerPathList": [
@@ -44,6 +47,12 @@
     },
     {
       "key": "groupButtons.groupButtonb2vr4ulylb.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton70hg52lbeh.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton70hg52lbeh.menuItems.menuItem0efw9610oa.onClick"
     }
   ],
   "groupButtons": {
@@ -133,6 +142,34 @@
       "placement": "BETWEEN",
       "widgetId": ""
     },
+    "groupButton70hg52lbeh": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "MENU",
+      "iconAlign": "right",
+      "iconName": "stacked-chart",
+      "id": "groupButton70hg52lbeh",
+      "index": 6,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Dashboards",
+      "menuItems": {
+        "menuItem0efw9610oa": {
+          "id": "menuItem0efw9610oa",
+          "index": 0,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "IASE — Índice de Antigüedad y Supervivencia Empresarial",
+          "onClick": "{{navigateTo('Dashboard IASE', {}, 'SAME_WINDOW');}}",
+          "widgetId": "smh7wgyyeq"
+        }
+      },
+      "onClick": "{{navigateTo('Dashboard IASE', {}, 'SAME_WINDOW');}}",
+      "placement": "BETWEEN",
+      "variant": "filled",
+      "widgetId": "qo0w9lwi9w"
+    },
     "groupButtonb2vr4ulylb": {
       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
       "buttonType": "SIMPLE",
@@ -190,7 +227,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "nmz7hwvobq",
-  "leftColumn": 19,
+  "leftColumn": 13,
   "minWidth": 450,
   "mobileBottomRow": 32,
   "mobileLeftColumn": 14,
@@ -203,8 +240,8 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 47,
-  "topRow": 26,
+  "rightColumn": 54,
+  "topRow": 25,
   "type": "BUTTON_GROUP_WIDGET",
   "version": 1,
   "widgetId": "bk2p3yvk2h",
