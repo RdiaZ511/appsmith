@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 17,
+  "bottomRow": 15,
   "boxShadow": "none",
   "defaultOptionValue": "GREEN",
   "dynamicBindingPathList": [
@@ -54,9 +54,9 @@
   "rightColumn": 21,
   "serverSideFiltering": false,
   "sourceData": "{{getMunicipios.data}}",
-  "topRow": 10,
+  "topRow": 8,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "qvgbygsaod",
-  "widgetName": "municipiosFilter"
+  "widgetName": "municipioFilter"
 }

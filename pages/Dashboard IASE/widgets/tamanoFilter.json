@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 25,
+  "bottomRow": 22,
   "boxShadow": "none",
   "defaultOptionValue": "GREEN",
   "dynamicBindingPathList": [
@@ -54,9 +54,9 @@
   "rightColumn": 21,
   "serverSideFiltering": false,
   "sourceData": "{{getTamanos.data}}",
-  "topRow": 18,
+  "topRow": 15,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "0x7jo3t33e",
-  "widgetName": "tamanosFilter"
+  "widgetName": "tamanoFilter"
 }
