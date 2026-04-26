@@ -14,7 +14,8 @@
       "key": "borderRadius"
     }
   ],
-  "iconName": "arrow-top-right",
+  "dynamicTriggerPathList": [],
+  "iconName": "calculator",
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
