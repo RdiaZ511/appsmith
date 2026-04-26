@@ -1,0 +1,18 @@
+SELECT
+  sector,
+  municipio,
+  tamano,
+  total_entidades,
+  antiguedad_promedio,
+  clasificacion,
+  cnt_emergente,
+  cnt_consolidacion,
+  cnt_establecida,
+  cnt_madura,
+  cnt_ancla,
+  operativa_promedio
+FROM v_iase
+WHERE (sector ILIKE {{ '%' + sectorFilter.selectedOptionValue + '%' }} OR {{ sectorFilter.selectedOptionValue }} = 'Todos')
+  AND (municipio ILIKE {{ '%' + municipioFilter.selectedOptionValue + '%' }} OR {{ municipioFilter.selectedOptionValue }} = 'Todos')
+  AND (tamano ILIKE {{ '%' + tamanoFilter.selectedOptionValue + '%' }} OR {{ tamanoFilter.selectedOptionValue }} = 'Todos')
+ORDER BY municipio, antiguedad_promedio DESC;

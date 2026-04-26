@@ -1,0 +1,9 @@
+SELECT
+  SUM(total_entidades) AS total_entidades,
+  ROUND(AVG(antiguedad_promedio),1) AS antiguedad_general,
+  SUM(cnt_emergente) AS sum_emergente,
+  SUM(cnt_consolidacion) AS sum_consolidacion,
+  SUM(cnt_establecida) AS sum_establecida,
+  SUM(cnt_madura) AS sum_madura,
+  SUM(cnt_ancla) AS sum_ancla
+FROM v_iase;

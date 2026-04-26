@@ -31,7 +31,7 @@
   "mobileRightColumn": 17,
   "mobileTopRow": 88,
   "needsErrorInfo": false,
-  "onClick": "{{imprimirFichaPDF.imprimirDesdeModal();}}",
+  "onClick": "{{generarFichaPDF.imprimir();}}",
   "parentColumnSpace": 17.9375,
   "parentId": "0",
   "parentRowSpace": 10,

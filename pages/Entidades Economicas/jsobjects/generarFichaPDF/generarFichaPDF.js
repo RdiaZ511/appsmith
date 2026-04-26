@@ -1,21 +1,6 @@
 export default {
   async imprimir() {
-    // DIAGNÓSTICO: ver qué tiene el form completo
- console.log("formData completo:", JSON.stringify(update_form.formData));
-console.log("store municipio:", appsmith.store.fichaPDF);
-    
-    // Ver cada campo individualmente
-    console.log("nombre:", update_form.formData.nombre);
-    console.log("direccion:", update_form.formData.direccion);
-    console.log("municipio_parroquia_2:", update_form.formData.municipio_parroquia_2);
-
-    // Mostrar en pantalla para confirmar
-    showAlert(JSON.stringify(update_form.formData), 'info');
-  }
-}	
-		
-		
-		const codigoSeleccionado = update_form.formData.municipio_parroquia_2;
+const codigoSeleccionado = update_form.formData.municipio_parroquia_2;
 
 // Buscar el objeto completo en los datos del query
 const seleccionado = Parroquias_Municipios.data.find(
@@ -69,30 +54,30 @@ const seleccionado = Parroquias_Municipios.data.find(
   
   /* CABECERA */
   .cabecera { display: flex; justify-content: space-between; align-items: center;
-    border: 2px solid #cc0000; padding: 8px; margin-bottom: 4px; }
+    border: 0px solid #888; padding: 8px; margin-bottom: 4px; }
   .cabecera img { height: 50px; }
   .cabecera .titulo-secretaria { font-size: 9px; font-weight: bold;
-    color: #cc0000; text-align: right; line-height: 1.3; }
+    color: #de8a13; text-align: right; line-height: 1.3; }
   
   /* TÍTULO FICHA */
-  .titulo-ficha { background: #fff; border: 1px solid #cc0000;
+  .titulo-ficha { background: #fff; border: 1px solid #888;
     text-align: center; font-weight: bold; font-size: 13px;
     padding: 5px; margin-bottom: 0; }
   
   /* SECCIÓN HEADER */
-  .seccion-header { background: #cc0000; color: white;
+  .seccion-header { background: #888; color: white;
     text-align: center; font-weight: bold; padding: 4px; font-size: 11px; }
   
   /* TABLA PRINCIPAL */
   table { width: 100%; border-collapse: collapse; }
   td, th { border: 1px solid #aaa; padding: 5px 7px; vertical-align: top; }
   .label { font-weight: bold; background: #f5f5f5; width: 30%; }
-  .label-red { font-weight: bold; background: #cc0000; color: white;
+  .label-red {  background: #888; color: white;
     text-align: center; }
   
   /* FILA DE TIPO/TAMAÑO */
   .tipo-row td { text-align: center; }
-  .tipo-row .selected { font-weight: bold; background: #cc0000;
+  .tipo-row .selected { font-weight: bold; background: #c6c6c6;
     color: white; padding: 3px 10px; border-radius: 3px; }
   
   @media print {
@@ -106,13 +91,13 @@ const seleccionado = Parroquias_Municipios.data.find(
 
   <!-- CABECERA -->
   <div class="cabecera">
-    <div style="font-size:10px; color:#cc0000; font-weight:bold;">CARABOBO<br><em>Te quiero</em></div>
-    <div style="font-weight:bold; font-size:12px;">FICHA RESUMEN EMPRESA</div>
-    <div class="titulo-secretaria">SECRETARIA PARA EL TURISMO<br>Y EL DESARROLLO ECONÓMICO<br>INTEGRAL DEL ESTADO CARABOBO</div>
+    <div style="font-size:12px; color:#000000; font-weight:bold;">GOBERNACION DEL ESTADO CARABOBO<br><em>Informacion Reservada</em></div>
+    <div style="font-weight:bold; color:#888font-size:10x">FICHA RESUMEN EMPRESA</div>
+    <div style="font-weight:bold; color:#888font-size:8x">SECRETARIA PARA EL TURISMO<br>Y EL DESARROLLO ECONÓMICO<br>INTEGRAL DEL ESTADO CARABOBO</div>
   </div>
 
   <!-- SECCIÓN 1 -->
-  <div class="seccion-header">SECCIÓN 1: IDENTIFICACIÓN DE LA EMPRESA</div>
+  <div class="seccion-header">IDENTIFICACIÓN DE LA EMPRESA</div>
   <table>
     <tr>
       <td class="label">Nombre de Empresa:</td>

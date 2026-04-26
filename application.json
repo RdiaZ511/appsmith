@@ -61,6 +61,10 @@
     {
       "id": "Public.infraestructura Copy",
       "isDefault": false
+    },
+    {
+      "id": "Dashboard IASE",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
