@@ -1,0 +1,1 @@
+INSERT INTO public.dic_rubros ("tipo","categoria","descripcion","activo") VALUES ('{{(JSONForm1.formData || {}).tipo}}','{{(JSONForm1.formData || {}).categoria}}','{{(JSONForm1.formData || {}).descripcion}}','{{(JSONForm1.formData || {}).activo}}')
