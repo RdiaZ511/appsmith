@@ -235,6 +235,8 @@
   "mobileTopRow": 28,
   "needsErrorInfo": false,
   "orientation": "vertical",
+  "originalBottomRow": 57,
+  "originalTopRow": 25,
   "parentColumnSpace": 11.1875,
   "parentId": "0",
   "parentRowSpace": 10,
