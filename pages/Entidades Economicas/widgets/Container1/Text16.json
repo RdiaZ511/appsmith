@@ -1,6 +1,6 @@
 {
   "borderRadius": "0px",
-  "bottomRow": 16,
+  "bottomRow": 15,
   "boxShadow": "none",
   "dynamicBindingPathList": [
     {
@@ -31,7 +31,7 @@
   "text": "Entidades Economicas Estado Carabobo",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 12,
+  "topRow": 11,
   "type": "TEXT_WIDGET",
   "version": 1,
   "widgetId": "urzv99hdc8",

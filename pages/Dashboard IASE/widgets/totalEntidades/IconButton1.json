@@ -1,23 +1,19 @@
 {
   "animateLoading": true,
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderRadius": "0.375rem",
   "bottomRow": 5,
-  "boxShadow": "none",
-  "buttonColor": "#71717a",
+  "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+  "buttonColor": "#93c5fd",
   "buttonStyle": "PRIMARY",
-  "buttonVariant": "PRIMARY",
-  "dynamicBindingPathList": [
-    {
-      "key": "borderRadius"
-    }
-  ],
+  "buttonVariant": "SECONDARY",
+  "dynamicBindingPathList": [],
   "dynamicTriggerPathList": [],
   "iconName": "calculator",
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
   "key": "b5qajwdjkx",
-  "leftColumn": 3,
+  "leftColumn": 14,
   "minWidth": 50,
   "mobileBottomRow": 10,
   "mobileLeftColumn": 46,
@@ -27,7 +23,7 @@
   "parentId": "cjgzxliwak",
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
-  "rightColumn": 11,
+  "rightColumn": 22,
   "topRow": 1,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,

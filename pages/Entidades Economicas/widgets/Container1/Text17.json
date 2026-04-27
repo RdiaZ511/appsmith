@@ -1,8 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "borderWidth": "",
-  "bottomRow": 6,
+  "bottomRow": 19,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -12,43 +11,45 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
   "fontSize": "1rem",
-  "fontStyle": "BOLD",
+  "fontStyle": "",
   "isLoading": false,
   "isVisible": true,
-  "key": "oh8zmui52n",
-  "leftColumn": 35,
+  "key": "dtp1aahu0k",
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 22,
+  "mobileBottomRow": 19,
   "mobileLeftColumn": 0,
-  "mobileRightColumn": 7,
-  "mobileTopRow": 18,
+  "mobileRightColumn": 15,
+  "mobileTopRow": 15,
   "needsErrorInfo": false,
-  "originalBottomRow": 6,
-  "originalTopRow": 1,
+  "originalBottomRow": 20,
+  "originalTopRow": 15,
   "overflow": "NONE",
-  "parentColumnSpace": 16.6875,
-  "parentId": "0",
+  "parentColumnSpace": 6.6796875,
+  "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 63,
-  "shouldScrollContents": true,
+  "rightColumn": 44,
   "shouldTruncate": false,
-  "text": "Sala Situacional de  Infraestructura del Estado Carabobo",
+  "text": "Entidades registradas: {{SelectQuery.data.length}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 1,
+  "topRow": 15,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "7ugjr19nkl",
-  "widgetName": "Text1"
+  "widgetId": "6yy6hzdgzr",
+  "widgetName": "Text17"
 }
